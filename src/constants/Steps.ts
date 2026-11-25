@@ -1,9 +1,9 @@
 import { User, Lock, Camera } from "lucide-react";
 
 export const STEPS = [
-  { label: "Personal info", icon: User },
-  { label: "Security", icon: Lock },
-  { label: "Profile", icon: Camera },
+  { label: "Personal info", Icon: User },
+  { label: "Security", Icon: Lock },
+  { label: "Profile", Icon: Camera },
 ] as const;
 
 export const copy = {

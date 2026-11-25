@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import TechText from "@/components/animated/TechText";
-// import { LaserFooter } from "@/components/LaserFooter";
+import { LaserFooter } from "@/components/LaserFooter";
 import SplashCursor from "@/components/animated/SplashCursor";
 import GlassSurface from "@/components/animated/GlassSurface";
 import { RegisterForm } from "@/components/register/form/RegisterForm";
@@ -48,7 +48,7 @@ const Home = () => {
         </div>
       </main>
 
-      {/* <LaserFooter year={new Date().getFullYear()} /> */}
+      <LaserFooter year={new Date().getFullYear()} />
     </div>
   );
 };
