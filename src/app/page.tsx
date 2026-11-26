@@ -4,7 +4,7 @@ import TechText from "@/components/animated/TechText";
 import { LaserFooter } from "@/components/LaserFooter";
 import SplashCursor from "@/components/animated/SplashCursor";
 import GlassSurface from "@/components/animated/GlassSurface";
-import { RegisterForm } from "@/components/register/form/RegisterForm";
+import { RegisterForm } from "../components/register/form/RegisterForm";
 
 const headline = "Every great story\nbegins with a name.\nLet this be the start\nof yours.";
 

@@ -5,5 +5,5 @@ type StepLineProps = {
 };
 
 export const StepLine = ({ filled }: StepLineProps) => {
-  return <div className={cn("flex-1 origin-left h-1 bg-purple-500", filled ? "scale-x-100" : "scale-x-0")} />;
+  return <div className={cn("flex-1 origin-left h-1 bg-purple-500 transition duration-300 ", filled ? "scale-x-100" : "scale-x-0")} />;
 };
