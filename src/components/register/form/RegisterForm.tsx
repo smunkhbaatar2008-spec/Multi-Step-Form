@@ -8,6 +8,11 @@ import { RegisterActions } from "./RegisterActions";
 export const RegisterForm = () => {
   const [step, setStep] = useState<FormStep>(0);
 
+  const handleBack = () => {
+    const previousStep = step === 2 ? 1 : 0;
+    setStep(previousStep);
+  };
+
   const handleSubmit = (event: React.SubmitEvent<HTMLFormElement>) => {
     event.preventDefault();
 
@@ -18,10 +23,10 @@ export const RegisterForm = () => {
   return (
     <Card className="relative gap-0 rounded-[20px] border-[#ddc2ff5c] bg-transparent py-0">
       <CardContent className="p-4 sm:p-6">
-        <form className="w-103 flex flex-col" onSubmit={handleSubmit}>
+        <form className="w-136 flex flex-col gap-5" onSubmit={handleSubmit}>
           <Stepper step={step + 1} />
 
-          <RegisterActions step={step} />
+          <RegisterActions step={step} onBack={handleBack} />
         </form>
       </CardContent>
     </Card>
